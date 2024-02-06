@@ -1,0 +1,184 @@
+.container__main {
+    background: radial-gradient(
+        circle, 
+        var(--hot-purple-color) 0%, var(--faint-purple-color) 71%, var(--third-color) 100%
+    );
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    align-items: center;
+    
+    min-width: 320px;
+    width: 80dvw;
+    min-height: 80dvh;
+    margin: 9dvh auto 5dvh;
+    padding: 32px;
+    border-radius: 48px;
+}
+
+.container__main::before {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '';
+    background-image: url(../assets/mundo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    z-index: -2;
+}
+
+.container__main::after {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '';
+    background-color: rgba(0, 0, 0, .5);
+    z-index: -1;
+}
+
+.container__content {
+    height: 100%;
+    background-color: var(--white-color);
+    border-radius: 32px 0px 0px 32px;
+    padding: 32px;
+}
+
+.container__content__texts {
+    text-align: center;
+}
+
+.container__content__texts h1 {
+    font-size: 3rem;
+    margin-bottom: 40px;
+    color: var(--faint-purple-color);
+}
+
+.container__content__texts p {
+    margin-bottom: 40px;
+}
+
+.container__content__texts p strong {
+    color: var(--hot-purple-color);
+}
+
+.container__content__form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 16px;
+}
+
+.form__box {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.25rem;
+    gap: 0.25rem;
+}
+
+.form__box > input, .form__box-buttons input[type="submit"] {
+    outline: none;
+    border: 2px solid var(--faint-purple-color);
+    background-color: var(--second-color);
+    color: var(--black-color);
+    font-size: 1.25rem;
+    font-weight: 600;
+    border-radius: 8px;
+    padding: 12px;
+    transition: all .3s ease-in-out;
+}
+
+.form__box > input::placeholder {
+    color: var(--white-color);
+    opacity: .8;
+}
+
+
+.form__box > input:hover, .form__box-buttons input[type="submit"]:hover {
+    border: 2px solid var(--hot-blue-color);
+    background-color: var(--third-color);
+    color: var(--black-color);
+}
+
+.form__box-buttons {
+    margin-top: 8px;
+}
+
+.form__box-buttons input[type="submit"] {
+    width: 60%;
+    height: 56px;
+    padding: 0;
+    border: 2px solid var(--faint-blue-color);
+    background-color: var(--first-color);
+    color: var(--white-color);
+    cursor: pointer;
+}
+
+.container__content__signout {
+    display: flex;
+    justify-content: center;
+    margin-top: 8dvh;
+}
+
+.container__content__signout a {
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--first-color);
+    transition: all .3s ease-in-out;
+}
+
+.container__content__signout a:hover {
+    color: var(--third-color);
+}
+
+.container__images {
+    height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    background-image: url(../assets/mundo2.jpg);
+    background-size: cover;
+    overflow: hidden;
+    border-radius: 0px 32px 32px 0px;
+}
+
+.container__images::after {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    content: '';
+    background-image: url(../assets/espadachim.png);
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-color: rgba(255, 255, 255, .3);
+}
+
+.container__images img {
+    position: relative;
+    top: -100px;
+    right: -300px;
+    height: 200%;   
+    object-fit: cover;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 15dvh;
+    min-width: 320px;
+    width: 100dvw;
+    background-color: var(--hot-purple-color);
+}
+
+footer p {
+    font-size: 1rem;
+    color: var(--white-color);
+}

@@ -3,11 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/styles/var.css">
     <link rel="stylesheet" href="./src/styles/style.css">
+    <link rel="stylesheet" href="./src/styles/main.css">
     <title>Adventure Magic JS</title>
 </head>
 <body>
-    <h1>Adventure Magic JS</h1>
+    <main class="container__main">
+        <div class="container__content">
+            <div class="container__content__texts">
+                <h1><strong>Adventure Magic JS</strong></h1>
+                <p>Conheça o mundo mágico de <strong>Adventure Magic</strong> e conquiste o título Herói!</p>
+            </div>
+            <div class="container__content__form">
+                <div class="form__box">
+                    <label for="input-email">Email:</label>
+                    <input type="email" name="email" id="input-email" placeholder="example@mail.com">
+                </div>
+                <div class="form__box">
+                    <label for="input-password">Senha:</label>
+                    <input type="password" name="password" id="input-password" placeholder="********">
+                </div>
+                <div class="form__box-buttons">
+                    <input type="submit" value="Entrar">
+                </div>
+            </div>
+            <div class="container__content__signout">
+                <a href="https://www.linkedin.com/in/IvanildoBorges/" target="_blank" rel="noopener noreferrer">Conheça o desenvolvedor do jogo</a>
+            </div>
+        </div>
+        <div class="container__images">
+            <img src="./src/assets/espadachim.png" alt="Espadachim do Adventure Magic JS">
+        </div>
+    </main>
+    <footer class="container__footer">
+        <p>Desenvolvido por Ivanildo Borges ©</p>
+    </footer>
     <script type="text/javascript" src="./src/scripts/script.js"></script>
 </body>
 </html>

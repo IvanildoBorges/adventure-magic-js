@@ -5,7 +5,8 @@
     --first-color: #1e57c6;
     --second-color: #1b81dc;
     --third-color: #23c9ef;
-    --white-color: #fbe1fa;
+    --white-color: #fafafa;
+    --black-color: #333333;
     --hot-pink-color: #d773eb;
     --faint-pink-color: #fca7f9;
     --hot-blue-color: #2aa3e0;
@@ -15,4 +16,6 @@
 
     /* FONT */
     --font-luckiest: "Luckiest Guy", cursive;
+    --font-size: 1.5rem;
+    --font-letter-spacing: 0.15rem;
 }

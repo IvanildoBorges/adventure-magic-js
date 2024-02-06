@@ -1,17 +1,24 @@
-@import url(./var.css);
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+*::selection {
+    background: var(--second-color);
+    color: var(--black-color);
+}
+
 body {
-    height: 100dvh;
+    overflow-x: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-height: 100dvh;
+    color: var(--black-color);
     font-family: var(--font-luckiest);
+    font-size: var(--font-size);
+    letter-spacing: var(--font-letter-spacing);
     background: var(--third-color);
-    background: radial-gradient(
-        circle, 
-        var(--third-color) 0%, var(--second-color) 71%, var(--first-color) 100%
-    );
+    background: radial-gradient(circle,var(--third-color) 0%, var(--second-color) 71%, var(--first-color) 100%);
 }
