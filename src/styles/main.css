@@ -167,18 +167,3 @@
     height: 200%;   
     object-fit: cover;
 }
-
-footer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 15dvh;
-    min-width: 320px;
-    width: 100dvw;
-    background-color: var(--hot-purple-color);
-}
-
-footer p {
-    font-size: 1rem;
-    color: var(--white-color);
-}
