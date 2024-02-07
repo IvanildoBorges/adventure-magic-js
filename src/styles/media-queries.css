@@ -1,0 +1,70 @@
+@media screen and (max-width: 767px) {
+    body {
+        font-size: 1rem;
+    }
+
+    .container__main {
+        grid-template-columns: 1fr;
+        width: 90dvw;
+        margin: 12dvh auto 5dvh;
+        padding: 16px;
+        border-radius: 32px;
+    }
+
+    .container__main::before {
+        min-width: 320px;
+    }
+
+    .container__main::after {
+        min-width: 320px;
+    }
+    
+    .container__content {
+        height: auto;
+        border-radius: 32px;
+        padding: 32px 16px;
+    }
+    
+    .container__content__texts h1 {
+        font-size: 2rem;
+        margin-bottom: 32px;
+    }
+    
+    .container__content__texts p {
+        margin-bottom: 40px;
+    }
+    
+    .form__box {
+        font-size: 1rem;
+    }
+    
+    .form__box > input, .form__box-buttons input[type="submit"] {
+        font-size: 1rem;
+        padding: 12px;
+    }
+    
+    .form__box-buttons input[type="submit"] {
+        width: 100%;
+    }
+    
+    .container__content__signout a {
+        font-size: 0.85rem;
+        text-align: center;
+    }
+    
+    .container__images {
+        display: none;
+    }
+    
+    .container__images::after {
+        display: none;
+    }
+
+    footer {
+        min-height: 10dvh;
+    }
+    
+    footer p {
+        font-size: 0.75rem;
+    }
+}

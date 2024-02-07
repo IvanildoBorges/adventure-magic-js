@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./src/styles/style.css">
     <link rel="stylesheet" href="./src/styles/main.css">
     <link rel="stylesheet" href="./src/styles/footer.css">
+    <link rel="stylesheet" href="./src/styles/media-queries.css">
     <title>Adventure Magic JS</title>
 </head>
 <body>
@@ -16,7 +17,7 @@
                 <h1><strong>Adventure Magic JS</strong></h1>
                 <p>Conheça o mundo mágico de <strong>Adventure Magic</strong> e conquiste o título Herói!</p>
             </div>
-            <div class="container__content__form">
+            <form id="form-data" class="container__content__form" onsubmit="login(event)">
                 <div class="form__box">
                     <label for="input-email">Email:</label>
                     <input type="email" name="email" id="input-email" placeholder="example@mail.com">
@@ -28,7 +29,7 @@
                 <div class="form__box-buttons">
                     <input type="submit" value="Entrar">
                 </div>
-            </div>
+            </form>
             <div class="container__content__signout">
                 <a href="https://www.linkedin.com/in/IvanildoBorges/" target="_blank" rel="noopener noreferrer">Conheça o desenvolvedor do jogo</a>
             </div>

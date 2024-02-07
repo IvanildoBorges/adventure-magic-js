@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/var.css">
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/Home/home.css">
+    <link rel="stylesheet" href="../styles/footer.css">
+    <link rel="stylesheet" href="../styles/media-queries.css">
+    <title>Inicio | Adventure Magic JS</title>
+</head>
+<body>
+    <main class="container__main">
+        <div class="container__content">
+            <div class="container__content__texts">
+                <h1><strong>Bem vindo(a) ao Adventure Magic JS</strong></h1>
+                <p>Escolha seu personagem e lute por sua honra:</p>
+            </div>
+            <div class="container__heros">
+                <button class="hero" onclick="selecionarHeroi('bruxa')">
+                    <img src="../assets/bruxa.png" alt="">
+                    Bruxa - Mindie
+                </button>
+                <button class="hero" onclick="selecionarHeroi('espadachim')">
+                    <img src="../assets/espadachim.png" alt="">
+                    Espadachim - Zoe
+                </button>
+                <button class="hero" onclick="selecionarHeroi('mago')">
+                    <img src="../assets/mago.png" alt="">
+                    Mago - Arthur
+                </button>
+            </div>
+        </div>
+        <div class="container__images">
+            <img src="../assets/bruxa.png" alt="Bruxa do Adventure Magic JS">
+        </div>
+    </main>
+    <footer class="container__footer">
+        <p>Desenvolvido por Ivanildo Borges ©</p>
+    </footer>
+    <script type="text/javascript" src="../scripts/home.js"></script>
+</body>
+</html>
