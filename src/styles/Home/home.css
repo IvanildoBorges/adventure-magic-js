@@ -45,6 +45,11 @@
     color: var(--black-color);
 }
 
+.activad {
+    border: 2px solid var(--hot-purple-color);
+    background-color: var(--third-color);
+    color: var(--black-color);
+}
 
 .hero img {
     height: 80%;
