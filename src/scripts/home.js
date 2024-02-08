@@ -98,5 +98,7 @@ function selecionarHeroi() {
     });
 }
 
+function comecarJogo() {}
+
 geraCardsHeroi();
 selecionarHeroi();

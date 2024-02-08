@@ -33,7 +33,7 @@
     cursor: pointer;
     border-radius: 16px;
     height: 250px;
-    width: 250px;
+    width: 230px;
     transition: all .3s ease-in-out;
 }
 
@@ -46,6 +46,7 @@
 }
 
 .activad {
+    transform: translateY(-8px);
     border: 2px solid var(--hot-purple-color);
     background-color: var(--third-color);
     color: var(--black-color);
@@ -55,6 +56,27 @@
     height: 80%;
     width: 100%;
     object-fit: contain;
+}
+
+.button__content__gameplay {
+    outline: none;
+    border: 2px solid var(--faint-purple-color);
+    background-color: var(--first-color);
+    color: var(--white-color);
+    font-size: 1.25rem;
+    font-weight: 600;
+    border-radius: 8px;
+    padding: 16px;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+    margin-top: 32px;
+    width: 100%;
+}
+
+.button__content__gameplay:hover {
+    border: 2px solid var(--hot-blue-color);
+    background-color: var(--third-color);
+    color: var(--black-color);
 }
 
 .container__images::after {
